@@ -2,7 +2,7 @@
 
 ## Usage:
 
-Insert the Temaplate.php Libraries folder.
+Insert the ```Temaplate.php``` Libraries folder.
 
 In the controller:
 
