@@ -4,7 +4,7 @@
 
 Insert the Temaplate.php Libraries folder.
 
-In the controller usage:
+In the controller:
 
 ```PHP
 <?php
