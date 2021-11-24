@@ -26,7 +26,7 @@ class Controller extends BaseController
             ]
         ];
 
-        \App\Libraries\Template::load('pathToTheTemplateArchive', 'pathToTheViewArchive', $data);
+        return \App\Libraries\Template::load('pathToTheTemplateArchive', 'pathToTheViewArchive', $data);
         /* 
         Example:  $this->template->load('Layouts/app', 'Site/Blog/post', $data); 
         
