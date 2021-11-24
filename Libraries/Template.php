@@ -4,23 +4,23 @@ namespace App\Libraries;
 
 class Template
 {
-	private $template_data = [];
-	private $renderer;
+	private static $template_data = [];
+	private static $renderer;
 
 	public function __construct()
 	{
-		$this->renderer = \Config\Services::renderer();
+		self::$renderer = \Config\Services::renderer();
 	}
 
-	private function set($value)
+	private static function set($value)
 	{
-		$this->template_data = $value;
+		self::$template_data = $value;
 	}
 
-	public function load(String $template = "", String $view = "", array $view_data = []): void
+	public static function load(String $template = "", String $view = "", array $view_data = []): void
 	{
-		$this->set($this->renderer->setData($view_data)->render($view));
-		$this->renderer->setVar("contents", $this->template_data);
-		echo $this->renderer->render($template);
+		self::set(self::$renderer->setData($view_data)->render($view));
+		self::$renderer->setVar("contents", self::$template_data);
+		echo self::$renderer->render($template);
 	}
 }

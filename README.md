@@ -2,15 +2,9 @@
 
 ## Usage:
 
-Insert the Temaplate.php into Helper or Libraries folder.
+Insert the Temaplate.php Libraries folder.
 
-In ```BaseController.php``` or in your base controller preferably paste the code :
-
-```PHP 
-    $this->template = new \App\Libraries\Template;
-```
-
-on the controller usage:
+In the controller usage:
 
 ```PHP
 <?php
@@ -32,7 +26,7 @@ class Controller extends BaseController
             ]
         ];
 
-        $this->template->load('pathToTheTemplateArchive', 'pathToTheViewArchive', $data);
+        \App\Libraries\Template::load('pathToTheTemplateArchive', 'pathToTheViewArchive', $data);
         /* 
         Example:  $this->template->load('Layouts/app', 'Site/Blog/post', $data); 
         
