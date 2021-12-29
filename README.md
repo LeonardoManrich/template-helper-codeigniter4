@@ -28,7 +28,7 @@ class Controller extends BaseController
 
         return \App\Libraries\Template::load('pathToTheTemplateArchive', 'pathToTheViewArchive', $data);
         /* 
-        Example:  $this->template->load('Layouts/app', 'Site/Blog/post', $data); 
+        Example:  \App\Libraries\Template::load('Layouts/app', 'Site/Blog/post', $data); 
         
         Layouts is the folder, app is the template view file.
         Site is a folder, 'Blog' a subfolder of Site and 'post' the view file
