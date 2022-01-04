@@ -30,8 +30,8 @@ class Controller extends BaseController
         /* 
         Example:  \App\Libraries\Template::load('Layouts/app', 'Site/Blog/post', $data); 
         
-        Layouts is the folder, app is the template view file.
-        Site is a folder, 'Blog' a subfolder of Site and 'post' the view file
+        'Layouts' is the folder and 'app' is the template view file.
+        'Site' is a folder and 'Blog' is a subfolder of 'Site' folder and 'post' is the view file
         */
     }
 
