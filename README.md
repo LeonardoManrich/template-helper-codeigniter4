@@ -1,10 +1,10 @@
 # Template Helper for Codeigniter 4
 
-## Usage:
+#### Usage:
 
-Insert the ```Temaplate.php``` Libraries folder.
+Insert ```Temaplate.php``` in Libraries folder.
 
-In the controller:
+In your controller:
 
 ```PHP
 <?php
